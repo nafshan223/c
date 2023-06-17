@@ -75,8 +75,28 @@ void main()
        printf("%d is not an amstrong",ams);
    }
    
+    
+}
+
+
+factorial
+
+
+
+
+#include <stdio.h>
+void main()
+{
+   int n,f=1,i;
+   printf("enter a nmbr \n");
+   scanf("%d",&n);
    
-    
-    
-    
+   for(i=n;i>1;i--)
+   {
+     f=f*i;
+     
+   }
+   printf("the sum of %d is %d",n,f);
+   
+   
 }
