@@ -1,0 +1,82 @@
+ febinocci
+
+
+#include <stdio.h>
+void main()
+{
+    int a=0,b=1,n,i;
+    printf("enter a limit \n");
+    scanf("%d",&n);
+    int sum=a+b;
+    printf("Fibonacci Series:\n%d \n%d ",a,b);
+    for(i=1;i<=n;i++)
+    {
+        printf("\n%d",sum);
+        a=b;
+        b=sum;
+        sum=a+b;
+        
+    }
+    
+    
+    
+}
+
+
+palindrome
+
+#include <stdio.h>
+void main()
+{
+   int ams,x,rev=0,s;
+   printf("enter a nmbr \n");
+   scanf("%d",&ams);
+   x=ams;
+   while(x!=0)
+   {
+      s=x%10; 
+      rev=rev*10+s;
+      x=x/10;
+     
+   }
+   if(rev == ams)
+   {
+       printf("%d is an palindrome",ams);
+   }
+   else
+   {
+       printf("%d is not an palindrome",ams);
+   }
+   
+   
+amstrong 
+
+
+#include <stdio.h>
+void main()
+{
+   int ams,x,sum=0,s;
+   printf("enter the amstrong nmbr \n");
+   scanf("%d",&ams);
+   x=ams;
+   while(x!=0)
+   {
+      s=x%10; 
+      sum=sum+s*s*s;
+      x=x/10;
+      
+   }
+   if(sum == ams)
+   {
+       printf("%d is an amstrong",ams);
+   }
+   else
+   {
+       printf("%d is not an amstrong",ams);
+   }
+   
+   
+    
+    
+    
+}
